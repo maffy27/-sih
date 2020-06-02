@@ -1,21 +1,68 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<header class="header">
 
-<router-outlet></router-outlet>
+  <div class="header-top">
+    <div class="container-wrapper">
+      <span class="mail">
+        <a href="mailto:csinvhelp@gmail.com" class="dark-text" target="_blank">csinvhelp@gmail.com</a>
+      </span>
+      <div class="social">
+        <a href="https://twitter.com/SteamInvHelper" class="twitterGroup" target="_blank" title="Our Steam group">
+          Follow our Twitter Account
+        </a>
+        <a href="http://inventoryhelper.me/steamgroup" class="steamGroup" target="_blank" title="Our Steam group">
+          Join our Steam Group </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container-wrapper">
+      <a href="/" class="logo"><img src="../assets/logo.png" alt="Steam Inventory Helper"></a>
+      <div class="nav-bar-wrapper">
+        <ul class="nav-bar">
+          <li><a class="link" href="">FAQ</a></li>
+          <li><a class="link" href="mailto:csinvhelp@gmail.com">Support</a></li>
+          <li><a class="button nav-button help" href="">WE NEED YOUR HELP</a></li>
+          <li><a class="button nav-button download" href="">DOWNLOAD</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container-wrapper">
+      <div class="info">
+        <span class="pretitle">WHO WE ARE</span>
+        <span class="small-title">S.I.H.</span>
+        <span class="description">Free browser extension for Steam trade offer system and Steam store. Make a "Level-Up" for your Steam experience.</span>
+      </div>
+      <div class="contacts">
+        <span class="pretitle">CONTACT US</span>
+        <span class="mail">
+          <a href="mailto:csinvhelp@gmail.com" target="_blank" class="dark-text">csinvhelp@gmail.com</a>
+        </span>
+      </div>
+      <div class="">
+        <a href="mailto:csinvhelp@gmail.com" class="button support">SUPPORT</a>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="footer-bottom">
+    <div class="container-wrapper">
+      <span class="rights">© 2020 All rights reserved.</span>
+      <a href="/" class="rights">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+
