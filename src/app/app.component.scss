@@ -8,6 +8,7 @@
   font-size: 12px;
   height: 40px;
   background-color: #f2f5f7;
+  scroll-behavior: smooth;
 }
 
 .container-wrapper {
@@ -104,7 +105,7 @@
 }
 
 .nav-button {
-  padding: 17px 55px;
+  padding: 17px 44px;
   &:hover{
     opacity: 0.7;
   }

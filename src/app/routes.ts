@@ -2,7 +2,7 @@ import {Route} from '@angular/router';
 import {FaqComponent} from "./faq/faq.component";
 import {MainComponent} from "./main/main.component";
 import {DownloadComponent} from "./download/download.component";
-import {HelpComponent} from "./help/help.component";
+import {PrivacyComponent} from "./privacy/privacy.component";
 
 
 export const routes: Route[] = [
@@ -20,15 +20,15 @@ export const routes: Route[] = [
     component: DownloadComponent
   },
   {
-    path: 'help',
-    component: HelpComponent
+    path: 'privacy',
+    component: PrivacyComponent
   },
   {
     path: 'faq',
     component: FaqComponent
   },
   {
-    path: 'faq/:name',
+    path: 'faq/:url',
     component: FaqComponent
   },
   {

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sih';
+
+  public scrollToElement(el): void {
+    el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 }

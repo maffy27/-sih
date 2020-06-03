@@ -1,1 +1,27 @@
-<p>faq works!</p>
+<div class="content-block content-faq">
+  <div class="content">
+    <div class="faq-block">
+
+      <h2 class="title">General Information</h2>
+
+          <mat-accordion class="faq-expansion-panel list" #accordion="matAccordion" [multi]="true">
+
+            <mat-expansion-panel *ngFor="let faq of faqArray" [routerLink]="['/faq', faq.url]"[expanded]="faq.url === currURL">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h3 class="faq-title">{{faq.faq_title}}</h3>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ul class="faq-item-list">
+                <li *ngFor="let item of faq.faq_items">
+                  <p class="">{{item.item_text}}
+                </li>
+              </ul>
+            </mat-expansion-panel>
+
+          </mat-accordion>
+
+    </div>
+    <a href="mailto:csinvhelp@gmail.com" id="askQuestion" class="button btn-question">Ask question</a>
+  </div>
+</div>

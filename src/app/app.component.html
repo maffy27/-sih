@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" #target>
 
   <div class="header-top">
     <div class="container-wrapper">
@@ -17,13 +17,13 @@
 
   <div class="header-bottom">
     <div class="container-wrapper">
-      <a href="/" class="logo"><img src="../assets/logo.png" alt="Steam Inventory Helper"></a>
+      <a routerLink="main" class="logo"><img src="../assets/logo.png" alt="Steam Inventory Helper"></a>
       <div class="nav-bar-wrapper">
         <ul class="nav-bar">
-          <li><a class="link" href="">FAQ</a></li>
+          <li><a class="link" routerLink="faq">FAQ</a></li>
           <li><a class="link" href="mailto:csinvhelp@gmail.com">Support</a></li>
-          <li><a class="button nav-button help" href="">WE NEED YOUR HELP</a></li>
-          <li><a class="button nav-button download" href="">DOWNLOAD</a></li>
+          <!--<li><a class="button nav-button help" routerLink="help">WE NEED YOUR HELP</a></li>-->
+          <li><a class="button nav-button download" routerLink="download">DOWNLOAD</a></li>
         </ul>
       </div>
     </div>
@@ -55,12 +55,12 @@
       </div>
     </div>
   </div>
-  
+
 
   <div class="footer-bottom">
     <div class="container-wrapper">
       <span class="rights">© 2020 All rights reserved.</span>
-      <a href="/" class="rights">Privacy Policy</a>
+      <a routerLink="privacy" class="rights" (click)="scrollToElement(target)">Privacy Policy</a>
     </div>
   </div>
 </footer>

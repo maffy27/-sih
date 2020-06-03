@@ -5,10 +5,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainComponent } from './main/main.component';
 import { FaqComponent } from './faq/faq.component';
 import { DownloadComponent } from './download/download.component';
-import { HelpComponent } from './help/help.component';
 import {SharedModule} from "./shared/shared.module";
 import {RouterModule} from "@angular/router";
 import {routes} from "./routes";
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import {routes} from "./routes";
     MainComponent,
     FaqComponent,
     DownloadComponent,
-    HelpComponent
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,
